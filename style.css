@@ -1,4 +1,143 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    max-width: 1320px;
+}
+
+a {
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.link__color {
+    color: #F25822;
+}
+
+.header {
+    display: flex;
+    max-width: 1300px;
+    height: 75px;
+    flex-shrink: 0;
+    gap: 240px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top__logo {
+    width: 100px;
+    height: 90px;
+}
+
+.links {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 560px;
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.top__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 84px;
+    max-width: 590px;
+    gap: 30px;
+}
+
+.text_h1 {
+    color: #000;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: normal;
+}
+
+.text_h3 {
+    color: #888;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.first__button {
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: none;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.second__button {
+    color: #AAA;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    background-color: #FFF;
+}
+
+.top_buttons {
+    gap: 72px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.image__top {
+    width: 550px;
+    height: 380px;
+}
+
+.logos {
+    width: 1240px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imaging__foot {
+    width: 160px;
+    height: 50px;
 }
