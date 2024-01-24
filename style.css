@@ -8,7 +8,7 @@
 }
 
 body {
-    gap: 10px;
+    gap: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,6 +25,7 @@ a {
     font-weight: 600;
     line-height: normal;
 }
+
 .link__color {
     color: #F25822;
 }
@@ -140,4 +141,79 @@ a {
 .imaging__foot {
     width: 160px;
     height: 50px;
+}
+
+.middle {
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle__head {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-self: center;
+
+}
+.middle__buttom {
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.mid__h1 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mid__h2 {
+    color: #666;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 22.5px */
+}
+
+.mid__h3 {
+    color: #000;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 16.5px */
+}
+
+.head__card {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid #000;
+    width: 350px;
+    height: 291px;
+    padding: 25px;
+    /* margin: auto; */
+    gap: 25px;
+    flex-direction: column;
+}
+.middle__buttom_card {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-self: center;
 }
