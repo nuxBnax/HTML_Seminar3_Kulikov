@@ -144,6 +144,7 @@ a {
 }
 
 .middle {
+    max-width: 1320px;
     display: flex;
     margin: 30px;
     flex-direction: column;
@@ -154,22 +155,31 @@ a {
 }
 
 .middle__head {
-    width: 60%;
+    /* width: 60%; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-self: center;
+    justify-content: center;
 
 }
+
 .middle__buttom {
+    background: #FAFAFA;
     display: flex;
-    margin: 30px;
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 97px;
+    width: 100%;
 }
+
+.shadow {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
 .mid__h1 {
     color: #000;
     font-size: 24px;
@@ -202,18 +212,82 @@ a {
     align-content: flex-start;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     width: 350px;
     height: 291px;
     padding: 25px;
     /* margin: auto; */
-    gap: 25px;
     flex-direction: column;
 }
+
 .middle__buttom_card {
     width: 60%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-self: center;
+    justify-content: center;
+    padding-bottom: 23px;
+}
+
+.but_h1 {
+    color: #000;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.but_h2 {
+    max-width: 682px;
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 30px;
+    /* 24px */
+}
+
+.buttom_card {
+    display: flex;
+    width: 370px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_mid {
+    width: 70px;
+}
+
+.shadow2 {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+}
+
+.img_but {
+    width: 100%;
+}
+
+.but {
+    width: 80%;
+    text-align: center;
+    margin: 20px;
+}
+.but1 {
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+}
+.padding {
+    padding-bottom: 32px;
+}
+.button_mid {
+    padding-bottom: 32px;
+}
+.margin20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
