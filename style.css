@@ -2,28 +2,19 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    font-family: "Agbalumo", system-ui;
+    font-family: "Gilroy", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
-body {
-    gap: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.top {
-    max-width: 1320px;
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 a {
-    color: black;
-    font-size: 16px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    color: #000;
 }
 
 .link__color {
@@ -31,91 +22,83 @@ a {
 }
 
 .header {
+    padding-top: 40px;
+}
+
+.top {
     display: flex;
-    max-width: 1300px;
-    height: 75px;
-    flex-shrink: 0;
-    gap: 240px;
-    justify-content: space-around;
-    align-items: center;
+    padding-top: 10px;
+    margin-bottom: 84px;
+    justify-content: space-between;
 }
 
 .top__logo {
-    width: 100px;
-    height: 90px;
+    width: 137px;
+    height: 40px;
 }
 
 .links {
     color: #000;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    max-width: 560px;
     display: flex;
-    width: 100%;
-    flex-shrink: 0;
-    gap: 30px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 533px;
 }
 
 .top_content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.top__info {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 84px;
-    max-width: 590px;
-    gap: 30px;
+    margin-bottom: 260px;
 }
 
 .text_h1 {
     color: #000;
     font-size: 60px;
-    font-style: normal;
-    font-weight: 1000;
-    line-height: normal;
+    width: 560px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
 }
 
 .text_h3 {
     color: #888;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    max-width: 466px;
+    padding-bottom: 39px;
 }
 
 .first__button {
     width: 140px;
     height: 50px;
-    flex-shrink: 0;
     border-radius: 50px;
     border: none;
     background: #F25822;
     box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
     color: #FFF;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.first__button:hover {
+    background-color: #fff;
+    color: #F25822;
+    border-color: #F25822;
+    border-style: double;
+    cursor: pointer;
 }
 
 .second__button {
     color: #AAA;
     font-size: 15px;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 600;
     border: none;
     background-color: #FFF;
+}
+
+.second__button:hover {
+    color: #F25822;
+    cursor: pointer;
 }
 
 .top_buttons {
@@ -127,8 +110,14 @@ a {
 }
 
 .image__top {
-    width: 550px;
-    height: 380px;
+    width: 610px;
+}
+
+.top_logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 85px;
 }
 
 .logos {
@@ -143,25 +132,14 @@ a {
     height: 50px;
 }
 
-.middle {
-    max-width: 1320px;
-    display: flex;
-    margin: 30px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: center;
-    align-items: center;
-}
-
 .middle__head {
-    /* width: 60%; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
     align-self: center;
     justify-content: center;
     margin-bottom: 40px;
+    align-items: baseline;
+    justify-items: center;
 }
 
 .middle__buttom {
@@ -180,12 +158,12 @@ a {
     box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
 }
 
-.mid__h1 {
+.mid__h3 {
     color: #000;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 700;
+    font-family: "Gilroy-Bolt", system-ui;
+    ;
 }
 
 .mid__h2 {
@@ -194,16 +172,18 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 22.5px */
 }
 
-.mid__h3 {
-    color: #000;
+.mid__h4 {
+    font-weight: 700;
     font-size: 11px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 150%;
-    /* 16.5px */
+}
+.marb25{
+    margin-bottom: 25px;
+}
+.marb17 {
+    margin-bottom: 17px;
 }
 
 .head__card {
@@ -212,12 +192,13 @@ a {
     align-content: flex-start;
     justify-content: center;
     align-items: flex-start;
-    /* border: 1px solid #000; */
-    width: 350px;
-    height: 291px;
-    padding: 25px;
-    /* margin: auto; */
+    width: 310px;
+    height: 226px;
     flex-direction: column;
+}
+
+.padd {
+    padding: 40px 31px 25px 29px;
 }
 
 .middle__buttom_card {
@@ -233,9 +214,8 @@ a {
 .but_h1 {
     color: #000;
     font-size: 45px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 600;
+    margin-bottom: 22px;
 }
 
 .but_h2 {
@@ -246,7 +226,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    margin: 30px;
+    margin-bottom: 58px;
     /* 24px */
 }
 
@@ -270,24 +250,26 @@ a {
 .img_but {
     width: 100%;
 }
-
+.padd1 {
+    padding-top: 10px;
+}
 .but {
     width: 80%;
     text-align: center;
-    margin: 20px;
+    margin: 20px 0;
 }
+
 .but1 {
-    margin: 20px;
-    width: 80%;
+    padding-top: 5px;
+    width: 310px;
     text-align: center;
+    margin-bottom: 32px;
 }
+
 .padding {
     padding-bottom: 32px;
 }
+
 .button_mid {
     padding-bottom: 32px;
-}
-.margin20 {
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
